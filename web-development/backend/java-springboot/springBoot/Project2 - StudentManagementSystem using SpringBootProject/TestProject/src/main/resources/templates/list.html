@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<h2>All Students</h2>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
+
+    <tr th:each="s : ${students}">
+        <td th:text="${s.stuId}"></td>
+        <td th:text="${s.stuName}"></td>
+    </tr>
+
+<!--    for ( each stu : StuArr ){-->
+<!--    <tr>-->
+<!--        <td> ${stu.Id} </td>-->
+<!--        <td> ${stu.Name} </td>-->
+<!--    </tr>-->
+<!--    }-->
+</table>
+
+</body>
+</html>

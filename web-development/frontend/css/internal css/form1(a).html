@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+        background-image: url("loginbg.jfif");
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .log {
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      label {
+        font-size: 16px;
+        color: #555;
+        display: block;
+        margin: 10px 0 5px;
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      button {
+        background-color: #4caf50;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        font-size: 15px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      input[type="text"],input[type="password"]
+       {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="log">
+      <form>
+        <h2>Log In</h2>
+        <label>Username</label><input type="text" placeholder="Enter your user name" /><br /><br />
+        <label>Passward</label ><input type="password" placeholder="Enter your passward" /><br /><br />
+        <button id="button">Log in</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Container</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container my-4">
+        <h2>Single Column</h2>
+        <div class="row">
+            <div class="col bg-warning p-3 text-center">Single column</div>
+        </div>
+    </div>
+
+    <!-- Multi-card section -->
+    <div class="container my-4">
+        <h2>Let's Create 4 Cards</h2>
+        <div class="row gx-4 gy-4">
+            <!-- Card 1 -->
+            <div class="col-md-3">
+                <div class="card border-0 shadow-sm h-100 bg-primary-subtle p-3">
+                    <h5 class="fw-bold">Blazing Fast</h5>
+                    <div class="text-primary mb-2">
+                        <i class="bi bi-check-lg"></i>
+                    </div>
+                    <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, sequi eum earum
+                        accusamus voluptatibus eveniet dolor suscipit culpa fugiat, vel delectus impedit minus porro
+                        omnis repudiandae architecto dicta dolore tempora nostrum minima libero molestiae.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card Subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/286x180" class="card-img-top" alt="Placeholder image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card’s content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-3">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Four</h5>
+                        <p class="card-text">This is the fourth card. You can customize it with an image, links, or any
+                            other Bootstrap components.</p>
+                        <a href="#" class="btn btn-outline-secondary">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

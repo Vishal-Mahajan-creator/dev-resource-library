@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        .accordan {
+            background-color: antiquewhite;
+            width: 350px;
+            border: 2px solid black;
+        }
+
+        .accordan_header {
+            background-color: rgb(225, 0, 255);
+            padding: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .accordan_body {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+        }
+
+        .collapse {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Accordian</h1>
+    <div class="accordan">
+        <div class="accordan_header">Click to Toggle</div>
+        <div class="accordan_body collapse">
+            Ans 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet minima omnis excepturi ducimus
+            tenetur autem unde suscipit accusamus praesentium assumenda natus vero aut iste delectus tempore quibusdam
+            quod vel veritatis, distinctio quia nulla ad inventore possimus obcaecati? Officiis quos sunt ab rerum
+            impedit repellendus quis accusamus, beatae facilis maxime eaque.
+        </div>
+    </div>
+
+    <script>
+        const accordanHeader = document.querySelector(".accordan_header");
+        const accordanBody = document.querySelector(".accordan_body");
+
+        // Way 1: Toggle using inline style display
+        /*
+        function toggler() {
+            if (accordanBody.style.display === "block") {
+                accordanBody.style.display = "none";
+            } else {
+                accordanBody.style.display = "block";
+            }
+        }
+        accordanHeader.addEventListener("click", toggler);
+        */
+
+        //  Way 2: Toggle using classList.contains and remove/add
+        /*
+        function toggler() {
+            if (accordanBody.classList.contains("collapse")) {
+                accordanBody.classList.remove("collapse");
+            } else {
+                accordanBody.classList.add("collapse");
+            }
+        }
+        accordanHeader.addEventListener("click", toggler);
+        */
+
+        //  Way 3: Toggle using classList.toggle
+        /*
+        function toggler() {
+            accordanBody.classList.toggle("collapse");
+        }
+        accordanHeader.addEventListener("click", toggler);
+        */
+
+        //  Way 4: Toggle using anonymous function
+        /*
+        accordanHeader.addEventListener("click", function () {
+            accordanBody.classList.toggle("collapse");
+        });
+        */
+
+        //  Way 5: Toggle using arrow function
+        accordanHeader.addEventListener("click", () => {
+            accordanBody.classList.toggle("collapse");
+        });
+    </script>
+</body>
+
+</html>

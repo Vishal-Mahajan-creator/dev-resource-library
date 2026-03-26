@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Events Example</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 200px;
+            margin: 20px;
+            border: 2px solid #333;
+        }
+    </style>
+</head>
+<body>
+<h3>Mouse Events Demo</h3>
+<div id="box">Hover or Click Me</div>
+<div id="output"></div>
+
+<script>
+    const box = document.getElementById('box');
+    const output = document.getElementById('output');
+
+    box.addEventListener('click', () => {
+        output.innerHTML = "Box clicked!";
+    });
+
+    box.addEventListener('dblclick', () => {
+        output.innerHTML = "Box double-clicked!";
+    });
+
+    box.addEventListener('mouseover', () => {
+        output.innerHTML = "Mouse is over the box!";
+    });
+
+    box.addEventListener('mouseout', () => {
+        output.innerHTML = "Mouse left the box.";
+    });
+
+    box.addEventListener('mousemove', (event) => {
+        output.innerHTML = `Mouse moving: X=${event.offsetX}, Y=${event.offsetY}`;
+    });
+</script>
+</body>
+</html>

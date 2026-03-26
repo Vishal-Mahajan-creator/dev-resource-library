@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JavaScript</title>
+</head>
+<body>
+    <div id="p1">
+        <p> hello</p>
+        <p>world</p>
+    </div>
+    <form id="f1">
+        First name:-<input type="text" value="vishal">
+        Last name:-<input type="text" value="Mahajan">
+        <input type="submit" value="submit">
+
+    </form>
+    <p>These are the values of each element in the form:</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script>            
+    const x=document.forms["f1"];
+    let text= " ";
+
+    const a1=document.getElementById("p1");
+    const a2=a1.getElementsByTagName("p");
+
+    for (let i=0;i<x.length;i++){
+        text+=x.elements[i].value+"<br>";
+    }
+    document.getElementById("demo1").innerHTML=text;
+
+    document.getElementById("demo").innerHTML ='The first paragraph (index 0) inside "main" is: ' + a2[1].innerHTML;
+    </script>
+</body>
+</html>

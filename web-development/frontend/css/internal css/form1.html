@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Form</title>
+    <style>
+      body {
+        font-family: arial, sans-serif;
+        background-image: url("form1back.jfif");
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container {
+        width: 100%;
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        color: black;
+      }
+      label {
+        font-size: 16px;
+        color: #555;
+        display: block;
+        margin: 10px 0 5px;
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 10px;
+        color: black;
+      }
+      .footer a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+      button {
+        background-color: #4caf50;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        font-size: 15px;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      input[type="text"],input[type="email"],input[type="password"],textarea
+       {
+        width: 100%;
+        padding: 8px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      textarea {
+        resize: vertical;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h2><i>Sign Up</i></h2>
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter Your Full Name" required/><br /><br />
+
+        <label>Email</label>
+        <input type="email" name="email"  placeholder="Enter Your Email"  required /><br /><br />
+
+        <label>Passward</label>
+        <input type="password" name="Passward" placeholder="Enter Your Passward"required /><br /><br />
+
+        <label>Message</label>
+        <textarea id="Message"name="Message" placeholder="Write Your Message here..." ></textarea>
+        <br /><br />
+        <button type="submit">Submit</button> <br /><br />
+        <div class="footer">
+          <p>Already have a acoount? <a href="form1(a).html" target="_blank">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Window Control</title>
+  <style>
+   body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(327deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+  font-family: Arial, sans-serif;
+}
+
+    .demo {
+      width: 100%;
+      max-width: 800px;
+      margin: 100px auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      color: black;
+      text-align: center;
+    }
+    button {
+      margin: 5px;
+      padding: 10px;
+      border: none;
+      background-color: #333;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+   .info1, .info2 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="demo" id="demo">
+    <div class="info1" id="info1"></div>
+   <div class="info2" id="info2"></div>
+
+    <button onclick="openWin()">Open</button>
+    <button onclick="closeWin()">Close</button>
+    <button onclick="moveWin()">Move To (400,100)</button>
+    <button onclick="resizeWin()">Resize To (400×500)</button>
+  </div>
+
+  <script>
+    // Show screen width and height without overwriting the buttons
+    document.getElementById("info1").innerHTML = 
+      "Screen Width: " + screen.width + "px | Screen Height: " + screen.height + "px" +"| Screen AvailWidth: " 
+      + screen.availWidth+"| Screen AvailHeight: " + screen.availHeight +"| Screen Color Depth: " + screen.colorDepth+"| Screen Pixel Depth: " + screen.pixelDepth;
+    document.getElementById("info2").innerHTML = "Page location is " + window.location.href+
+    "| Page hostname is " + window.location.hostname+"| Page path is " + window.location+"Page protocol is " + window.location.protocol+"Port number is " + window.location.port;
+
+    let win;
+
+    function openWin() {
+      if (!win || win.closed) {
+        win = window.open("", "", "width=300,height=200,top=50,left=50,noopener=false");
+        win.document.write("<p>This is a controllable popup window.</p>");
+      }
+    }
+
+    function closeWin() {
+      if (win && !win.closed) {
+        win.close();
+      }
+    }
+
+    function moveWin() {
+      if (win && !win.closed) {
+        win.focus();
+        win.moveTo(400, 100);
+      }
+    }
+
+    function resizeWin() {
+      if (win && !win.closed) {
+        win.focus();
+        win.resizeTo(400, 500);
+      }
+    }
+  </script>
+
+</body>
+</html>

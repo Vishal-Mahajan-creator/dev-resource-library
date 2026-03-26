@@ -1,0 +1,18 @@
+#nodeJs
+Date:-10/Nnov/2025
+
+GET:-It use to fetch the data.
+post:-It ue to add the data.
+put:-Update the entire data.
+Patch:-Update the spacific data.
+Delete:-delete the data
+
+
+HTTP Method:-Helps to define the intendend action(Create,Read,Update & Delete-[CURD]) a client want to perform.
+
+Q.why we use importing in programing language?
+->To import functionality which is already defined.
+ex.we define the function in one file and we use that function functionality in another file.
+
+ip and port 
+Request:-Have Header and body

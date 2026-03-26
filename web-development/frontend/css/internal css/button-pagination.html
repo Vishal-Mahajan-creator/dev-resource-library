@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pagination</title>
+    <style>
+      body {
+        background: linear-gradient(327deg,rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%
+        
+        );
+      }
+      .pagination {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        gap: 10px;
+        margin-top: 550px;
+      }
+
+      .pagination a {
+        color: black;
+        background-color: gold;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+
+      .pagination a.active {
+        background-color: orange;
+        color: white;
+      }
+
+      .pagination a:hover {
+        background-color: darkorange;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagination">
+      <a href="#prev">&laquo; Prev</a>
+      <a href="#page1" class="active">1</a>
+      <a href="#page2">2</a>
+      <a href="#page3">3</a>
+      <a href="#next">Next &raquo;</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body onload="sub()">
+    <h1>1)onload Event </h1>
+    <h1>Vishal Vitthal Mahajan</h1>
+    <h2>2)onchange Event Attribute</h2>
+    <p>Select Gender:</p>
+    <label>
+        <form  id="s1">
+        <input type="radio" name="gender" value="Male" onclick="solve()"> Male
+        <input type="radio" name="gender" value="Female" onclick="solve()"> Female
+            <p id="d1"></p>
+
+         <h1>3)onfocus</h1>
+        <input type="text" id="fname">
+        <h1>4)Onsubmit</h1><input type="submit" value="submit">
+        </form>
+    </label>
+
+    <h1>5)onclick Event </h1>
+    <button onclick="function1()">click me</button>
+   <p id="p1"></p>
+
+    <script>
+      document.getElementById( "fname").onfocus = function() { geekfun()}; 
+          
+        function geekfun() { 
+            document.getElementById( "fname").style.backgroundColor = "red"; 
+        } 
+
+  document.getElementById("s1").onsubmit = 
+        function() {GFGfun()};       
+    function GFGfun() { 
+        alert("form submitted"); 
+    } 
+         function solve() {
+            const hi= document.getElementsByName("gender");
+
+            for (let i = 0; i < hi.length; i++) {
+                if (hi[i].checked) {
+                    selectedValue = hi[i].value;
+                    break;
+                }
+            }
+
+            document.getElementById("d1").innerHTML = "Selected Gender: " + selectedValue;
+        }
+        function function1(){
+            document.getElementById("p1").innerHTML="Hello ji";
+        }
+        function sub(){
+            alert("Welcome to web page!");
+        }
+
+    </script>
+</body>
+</html>
+

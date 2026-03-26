@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid container</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: MV Boli;
+        }
+        .item1{
+            background-color: aquamarine;
+            text-align: center;
+            grid-area:header ;
+        }
+        .item1>h1{
+            font-size: 80px;
+        }
+        .item2{
+            grid-area: menu;
+        }
+        .item2{
+            margin: 0px;
+            padding: 0px;
+        }
+        .item2 li{
+            padding: 8px;
+            margin-bottom:7px ;
+            background-color: brown;
+        }
+        .item2 li:hover{
+            background-color:blueviolet;
+        }
+        .item3{
+            grid-area: main;
+        }
+        .item3>h1{
+            margin: 7px;
+            font-size: 30px; 
+        }
+        .item3{
+            margin-bottom: 7px;
+        }
+        .item4{
+            grid-area: right;
+            background-color: chocolate;
+            padding: 15px;
+            color: black;
+            border: 2px solid aquamarine;
+        }
+        .item4>h2{
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .item4 li{
+            padding: 5px;
+            margin: 5px;
+        }
+        .item5{
+            grid-area: footer;
+            background-color: gray;
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            gap: 10PX;
+            background-color: coral;
+            padding: 10PX;
+            grid-template-areas:'header header header header header header' 'menu main main main main right' 'footer footer footer footer footer footer';
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div  class="item1"><h1>India</h1></div>
+
+        <div class="item2">
+            <ul>
+                <li>Flight</li>
+                <li>City</li>
+                <li>Food</li>
+            </ul>
+        </div><br><br>
+
+        <div class="item3">
+            <h1>The city<h1><br>
+                <p>Definition:
+             A city is a large and permanent human settlement, typically with a 
+              population, structured government, and significant infrastructure.
+            </p>
+        </div><br><br>
+
+        
+        <div class="item4">
+            <h1>Facts:<h1><br>
+                <li>🌍 Fun Facts: <br>
+                The first cities in history formed around 3,000–4,000 BCE (e.g., Uruk in Mesopotamia). <br>
+               
+            </li>
+        </div><br><br>
+
+        <div class="item5"><p>This is Fotter</p></div>
+    </div>
+</body>
+</html>

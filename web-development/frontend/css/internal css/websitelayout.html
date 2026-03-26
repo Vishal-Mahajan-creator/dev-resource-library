@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML page layout</title>
+    <style>
+      body {
+        margin: 0;
+        text-align: justify;
+        background-image: url("layourbg.jpg");
+        background-size: cover;
+        font-family: Apple Chancery, cursive;
+      }
+      ul {
+        background-color:black;
+        list-style: none;
+        margin-top: -8px;
+        padding: 0px;
+        overflow: hidden;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        display: inline-block;
+        text-align: center;
+        padding: 14px 26px;
+        color: white;
+      }
+      div {
+        padding: 20px;
+      }
+      li a:hover {
+        background-color: rgb(102, 47, 255);
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .all {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      .coloum1 {
+        float:none;
+        width: 30.81%;
+        padding: 15px;
+        margin-top: 30px;
+        border-radius: 30px;
+        border: 2px solid black;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+      .footer {
+        background-color:black;
+        text-align: center;
+        padding: 10px;
+        position:relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin-top: 50px;
+        }
+      .A1 {
+        background-color: rgb(102, 218, 247);
+      }
+      img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      
+        }
+        .img{
+            border: 12px solid transparent;
+            padding: 15px;
+            border-image:url(png.png) 30 round ;
+           
+        } 
+      
+    </style>
+  </head>
+  <body>
+    <div><h2 style="color: white; text-align: center; font-family: Arial Black;">Fruit is nature’s candy.</h2></div>
+    <ul>
+      <li class="A1"><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">New</a></li>
+      <li><a href="#" onmouseover="col1()">About us </a></li>
+    </ul>
+    <div class="all">
+      <div class="coloum1">
+        <h1>Apple</h1>
+        <img src="apple.jpg" height="150px" />
+        <p>
+          <b>●Common Name:</b> Apple<br />
+          <b> ●Flavor Profile:</b> Sweet to tart be <br />
+          <b>●Common Uses: </b>Eating raw, baking, making cider <br />
+          <b>●Description:</b> Round, with skin that can be red, green, or
+          yellow; typically 2-4 inches in diameter. <br />
+        </p>
+      </div>
+      <div class="coloum1">
+        <h1>Banana</h1>
+        <img src="Banana.png" height="150px"  />
+        <p>
+          <b>●Common Name:</b> Banana<br />
+          <b> ●Flavor Profile:</b> Sweet <br />
+          <b>●Common Uses:</b> Smoothies, desserts, baking <br />
+          <b>●Description:</b> Long, curved fruit with yellow skin when ripe;
+          about 6-8 inches long. <br />
+        </p>
+      </div>
+      <div class="coloum1" >
+        <h1>Orange</h1>    
+            <p class="img" "><img src="Oranges.png" ></p>
+
+
+        <p>
+          <b>●Common Name:</b> Orange<br />
+          <b> ●Flavor Profile:</b> Sweet and tangy <br />
+          <b>●Common Uses:</b> Juicing, eating raw, flavoring dishes<br />
+          <b>●Description:</b>Round, bright orange fruit with a thick peel; typically 2-3 inches in diameter. <br />
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <footer style="color: white">welcome to web page</footer>
+      </div>
+      <script type="text/javascript">
+        function col1(){
+          alert("“Life is like a fruit; it’s up to you to squeeze out every drop of sweetness.” – Vishal Mahajan");
+        }
+
+        
+      </script> 
+  </body>
+</html>
